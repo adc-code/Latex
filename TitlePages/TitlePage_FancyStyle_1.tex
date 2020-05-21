@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[letterpaper,margin=0.85in]{geometry}
+
+\usepackage{psvectorian}
+\usepackage{pstricks}
+\usepackage{mathpazo}
+
+% used to adjust the colour
+\usepackage{xcolor}
+
+\definecolor{darkblue}{rgb}{0.0,0.0,0.71} 
+
+
+\begin{document}
+
+% Remove page numbering on this page
+\thispagestyle{empty}
+
+% Create some empty space to vertically center
+\vspace*{\fill}
+
+% Center everything horizontally
+\begin{center}
+
+% Show a nice flower ornamentation 
+\psvectorian[width=2in,color=darkblue]{68}
+
+% Space to the title text
+\vspace{20pt}
+
+\color{darkblue}
+
+\Huge \em
+Some Type of Project: \\
+\ \\
+Project Title and  Subtitle\\
+
+% Extra blank line
+\ \\
+
+% More decoration
+\psvectorian[width=0.75in,color=darkblue]{58}
+
+% Two extra blank lines
+\ \\ 
+\ \\
+
+\large
+Student Name \\
+Student ID
+
+% Space from text to the nice flower ornamentation 
+\vspace{20pt}
+
+\psvectorian[width=2in,flip,color=darkblue]{68}
+
+\end{center}
+
+% Need this to make the contents vertically centered.
+\vfill
+
+% White space to the end of the page
+\clearpage
+
+% start the page count from this page... since it actually
+% contains information
+\setcounter{page}{1}
+
+Start of report...
+
+\end{document}
+

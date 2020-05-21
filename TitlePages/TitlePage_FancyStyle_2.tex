@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[letterpaper,margin=0.85in]{geometry}
+
+\usepackage{psvectorian}
+\usepackage{pstricks}
+\usepackage{mathpazo}
+
+
+\begin{document}
+
+% Remove page numbering on this page
+\thispagestyle{empty}
+
+% Change the margins for this page so that the 
+% ornamentation is closer to the corners.
+\newgeometry{margin=0.35in}
+
+% The top Ornaments...
+\psvectorian[width=1.5in,color=purple]{63}
+\hspace*{\fill}
+\psvectorian[width=1.5in,color=purple]{64}
+
+% Create some empty space to vertically center
+\vspace*{\fill}
+
+% Center all the words horizontally
+\begin{center}
+
+% The ornaments are in purple so the text is as well
+\color{purple}
+
+% Space to the title text
+\vspace{20pt}
+
+\fontsize{30pt}{30pt}\selectfont  \bf \em
+Some Type of Project: \\
+\ \\
+Project Title and  Subtitle\\
+
+% Extra blank line
+\ \\
+
+% More decoration
+\psvectorian[width=1in,color=purple]{81}
+
+% Two extra blank lines
+\ \\ 
+\ \\
+
+\large 
+Student Name \\
+Student ID \\
+\ \\
+Date
+
+% Space from text to the nice flower ornamentation 
+\vspace{20pt}
+\end{center}
+
+
+% Need this to make the contents vertically centered.
+\vfill
+
+% The bottom ornamentation
+\psvectorian[width=1.5in,flip,color=purple]{63}
+\hspace*{\fill}
+\psvectorian[width=1.5in,flip,color=purple]{64}
+
+
+% White space to the end of the page
+\clearpage
+
+% restore the geometry to the previous
+\restoregeometry
+
+
+% start the page count from this page... since it actually
+% contains information
+\setcounter{page}{1}
+
+Start of report... 
+
+\end{document}
+
+
